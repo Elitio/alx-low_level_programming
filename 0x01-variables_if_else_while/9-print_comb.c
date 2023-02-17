@@ -12,7 +12,7 @@ int main(void)
 {
 	int num;
 
-	for (num = 0; num < 11; num++)
+	for (num = 48; num < 58; num++)
 	{
 		if (num != 9)
 		{
