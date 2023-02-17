@@ -14,7 +14,7 @@ int main(void)
 
 	if (n < 10)
 	{
-		putchar(n);
+		printf("%d", n);
 		n++;
 	}
 	putchar('\n');
