@@ -17,12 +17,15 @@ int main(void)
 	{
 		for (j = num; j <= 9; j++)
 		{
-			putchar(num + '0');
-			putchar(j + '0');
-			if (num != 9 && j != 9)
+			if (num != j)
 			{
-				putchar(' ');
+				putchar(num + '0');
+				putchar(j + '0');
+				if (num != 9 && j != 9)
+				{
 				putchar(',');
+				putchar(' ');
+				}
 			}
 		}
 	}
