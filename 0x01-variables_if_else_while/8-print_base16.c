@@ -13,13 +13,17 @@ int main(void)
 	char n;
 	char m;
 
-	for (n = 48; n < 58; n++)
+	n = 48;
+	m = 97;
+	while (n < 58)
 	{
 		putchar(n);
+		n++;
 	}
-	for (m = 0; n < 6; n++)
+	while (m < 103)
 	{
-		putchar(m + 'a');
+		putchar(m);
+		m++;
 	}
 	putchar('\n');
 	return (0);
