@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int n = rand();
+	int n = rand() % 100;
 
 	if (n < 0)
 	{
