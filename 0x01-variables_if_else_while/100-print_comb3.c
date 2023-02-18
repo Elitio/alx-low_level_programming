@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	int n = 0;
-	int m = 0;
+	int n;
+	int m;
 
 
 	for (n = 0; n < 10; n++)
