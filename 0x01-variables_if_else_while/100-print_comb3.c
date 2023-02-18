@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	int n;
-	int m;
+	int n = 0;
+	int m = 0;
 
 
 	for (n = 0; n < 10; n++)
@@ -23,8 +23,8 @@ int main(void)
 			{
 				if (n != 8 && m != 9)
 				{
-					putchar('n');
-					putchar('m');
+					putchar(n);
+					putchar(m);
 					putchar(',');
 					putchar(' ');
 				}
