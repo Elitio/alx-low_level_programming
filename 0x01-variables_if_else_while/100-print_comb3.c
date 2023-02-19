@@ -21,14 +21,13 @@ int main(void)
 		{
 			if (n != m && n < m)
 			{
-				if (n != 8 && m != 9)
+				if (n == 8 && m == 9)
 				{
-					putchar(n);
-					putchar(m);
+					break;
 				}
+				putchar(n);
+				putchar(m);
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
