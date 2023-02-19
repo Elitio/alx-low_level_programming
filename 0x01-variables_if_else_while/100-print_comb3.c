@@ -21,17 +21,14 @@ int main(void)
 		{
 			if (n != m && n < m)
 			{
-				if (n == 8 && m == 9)
-				{
-					break;
-				}
-				else
-				{
-					putchar(n);
-					putchar(m);
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(n);
+				putchar(m);
+				putchar(',');
+				putchar(' ');
+			}
+			else if (n == 8 && m == 9)
+			{
+				break;
 			}
 		}
 	}
