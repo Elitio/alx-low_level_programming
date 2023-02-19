@@ -15,13 +15,15 @@ int main(void)
 	int m;
 	int o;
 
-	n = 0;
+	n = 48;
+	m = 48;
+	o = 48;
 	while (n < 58)
 	{
-		m = 0;
+		m = 48;
 		while (m < 58)
 		{
-			o = 0;
+			o = 48;
 			while (0 < 58)
 			{
 				if (n < m && m < 0)
@@ -36,12 +38,12 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				o++;
 			}
-			o++;
+			m++;
 		}
-		m++;
+		n++;
 	}
-	n++;
 	putchar('\n');
 	return (0);
 }
