@@ -25,10 +25,13 @@ int main(void)
 				{
 					break;
 				}
-				putchar(n);
-				putchar(m);
-				putchar(',');
-				putchar(' ');
+				else
+				{
+					putchar(n);
+					putchar(m);
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
