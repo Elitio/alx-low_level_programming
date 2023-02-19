@@ -26,7 +26,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			else if (n == 8 && m == 9)
+			else if (n == 56 && m == 57)
 			{
 				break;
 			}
