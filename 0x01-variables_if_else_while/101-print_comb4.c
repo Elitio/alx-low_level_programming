@@ -26,7 +26,7 @@ int main(void)
 			o = 48;
 			while (0 < 58)
 			{
-				if (n < m && m < 0)
+				if (n != m && n < m && m < o)
 				{
 					putchar(n);
 					putchar(m);
