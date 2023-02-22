@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - This is the code to be executed first
@@ -13,4 +13,5 @@ int main(void)
 
 	for (i = 0; str[i] != '\0'; i++)
 		_putchar(str[i]);
+	return (0);
 }
