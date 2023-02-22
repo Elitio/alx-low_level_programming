@@ -2,7 +2,7 @@
 
 /**
  * _islower - This function will print 1 if c is lowercase
- * c - This is the parameter of function _islower.
+ * @c: This is the parameter of function _islower
  *
  * Return: will return 0 if successful
  */
