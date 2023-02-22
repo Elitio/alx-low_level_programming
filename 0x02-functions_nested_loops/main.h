@@ -1,5 +1,5 @@
-#ifndef main.h
-#define main.h
+#ifndef MAIN.H
+#define MAIN.H
 
 /**
  * main - This will execute first
@@ -8,3 +8,5 @@
  */
 
 int _putchar(char str);
+
+#endif

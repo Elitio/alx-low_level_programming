@@ -10,7 +10,6 @@
 
 int _putchar(char str)
 {
-	str[] = "_putchar";
 
-	return(write(1, &str, sizeof(str) - 1));
+	return(write(1, &str, sizeof(str)));
 }
