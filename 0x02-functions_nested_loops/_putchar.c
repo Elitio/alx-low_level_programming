@@ -11,5 +11,5 @@
 int _putchar(char str)
 {
 
-	return(write(1, &str, sizeof(str)));
+	return(write(1, &str, 1));
 }

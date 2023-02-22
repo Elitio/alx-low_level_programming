@@ -2,12 +2,7 @@
 
 #define MAIN_H
 
-/**
- * main - This will execute first
- *
- * Return: This will return 0 when successful
- */
-
 int _putchar(char str);
+void print_alphabet(void);
 
 #endif
