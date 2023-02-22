@@ -8,8 +8,9 @@
  * Return: The return value will be the string
  */
 
-int _putchar()
+int _putchar(char str)
 {
-	char str[] = "_putchar";
+	str[] = "_putchar";
+
 	return(write(1, &str, sizeof(str) - 1));
 }
