@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * main - This is the executed function at initt
+ * print_alphabet - This is the function of the prototype
  *
  * Return: will return 0 if successful;
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int *alph;
+	char alph;
 
 	for (alph = 'a'; alph <= 'z'; alph++)
-	{
 		_putchar(alph);
-	}
 	_putchar('\n');
-	return (0);
 }
