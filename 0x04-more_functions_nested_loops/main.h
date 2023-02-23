@@ -4,7 +4,9 @@
 
 /**
  * file - This is a main.h file
- *
+ * @c: This is a parameter
+ * @a: This is a parameter
+ * @b: This is a parameter
  * Auther: Christian Annan Segbenu (Elitio)
  * Desc: All prototypes used here
  */
