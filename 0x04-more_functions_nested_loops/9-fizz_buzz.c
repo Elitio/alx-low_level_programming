@@ -25,17 +25,19 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		else if (n == 100)
-		{
-			printf("%d\n", n);
-			break;
-		}
 		else
 		{
 			printf("%d", n);
 		}
-		printf(" ");
+
+		if (n != 100)
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
+		}
 	}
-	printf("\n");
 	return (0);
 }
