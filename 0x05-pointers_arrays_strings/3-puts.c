@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _puts - This is the prototype function that will print a string to the stdout
+ * _puts - This is the prototype function that will print a string
  *
  * @str: This is the parameter of the function
  * Return: This will return 0when successful
