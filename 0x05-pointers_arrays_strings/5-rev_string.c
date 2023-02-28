@@ -11,12 +11,17 @@
 
 void rev_string(char *s)
 {
-	int len = strlen(s) - 1;
+	char rev = s[0];
+	int counter = 0;
 	int i;
 
-	for (i = len; i >= 0; i--)
+	while (s[counter] != '\0')
+		counter++;
+	for (i = 0; i < counter; i++)
 	{
-		printf("%c", *s[i]);
+		counter--;
+		rev = s[i];
+		s[i] = s[counter];
+		s[counter] = rev;
 	}
-	putchar('\n');
 }
