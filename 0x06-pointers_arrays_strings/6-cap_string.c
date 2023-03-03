@@ -24,7 +24,7 @@ char *cap_string(char *)
 				str[i] = str[i] - 32;
 				continue;
 			}
-			if(str[i] == ' ' || str[i] == ';' || str)
+			if(str[i] == ' ')
 			{
 				i++;
 			}
