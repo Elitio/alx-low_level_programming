@@ -12,16 +12,15 @@ char *leet(char *str)
 {
 	char *leet_chars = "eElLoOaAtT";
 	char *leet_replacements = "3311004477";
+	size_t len = strlen(str);
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (size_t i = 0; i < len; i++)
 	{
-		char c = str[i];
-
 		for (size_t j = 0; j < strlen(leet_chars); j++)
 		{
-			if (c == leet_chars[j])
+			if (str[i] == leet_chars[j])
 			{
-				str[i] = leet_replacements[j];
+				str[i] = leet_replacements[i];
 				break;
 			}
 		}
