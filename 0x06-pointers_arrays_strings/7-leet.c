@@ -10,39 +10,21 @@
 
 char *leet(char *str)
 {
-	char *p;
+	char *leet_chars = "eElLoOaAtT";
+	char *leet_replacements = "3311004477";
 
-	while ((p = strchr(str, 'o')) != NULL)
+	for (int i = 0; str[i] != '\0'; i++)
 	{
-		*p = '0';
-	}
-	while ((p = strchr(str, 'O')) != NULL)
-	{
-		*p = '0';
-	}
-	while ((p = strchr(str, 'e')) != NULL)
-	{
-		*p = '3';
-	}
-	while ((p = strchr(str, 'E')) != NULL)
-	{
-		*p = '3';
-	}
-	while ((p = strchr(str, 'l')) != NULL)
-	{
-		*p = '1';
-	}
-	while ((p = strchr(str, 'L')) != NULL)
-	{
-		*p = '1';
-	}
-	while ((p = strchr(str, 't')) != NULL)
-	{
-		*p = '7';
-	}
-	while ((p = strchr(str, 'T')) != NULL)
-	{
-		*p = '7';
+		char c = str[i];
+
+		for (size_t j = 0; j < strlen(leet_chars); j++)
+		{
+			if (c == leet_chars[j])
+			{
+				str[i] = leet_replacements[j];
+				break;
+			}
+		}
 	}
 	return (str);
 }
