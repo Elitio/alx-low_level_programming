@@ -11,25 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	print_args(argc, argv);
+	(void) argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
 
-/**
- * print_args - This is the prototype function
- *
- * @argc: This is the first parameter
- * @argv: This is the second parameter
- * Return: Will return void
- */
-
-
-void print_args(int argc, char *argv[])
-{
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
-}
