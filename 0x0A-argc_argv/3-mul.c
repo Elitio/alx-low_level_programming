@@ -1,33 +1,34 @@
-#include "main.h"
 #include <stdio.h>
-#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * mul - Multiplies two integers
- * @a: The first integer to multiply
- * @b: The second integer to multiply
- * Return: The product of the multiplication
+ * @a: First integer
+ * @b: Second integer
+ * Return: The product of a and b
  */
 int mul(int a, int b)
 {
-	int multiply;
-
-	if (a && b)
-	{
-		multiply = a * b;
-		printf("%d\n", multiply);
-	}
-	printf("Error\n");
-	return (1);
+	return (a * b);
 }
-
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * @argc: Number of arguments passed to the program
+ * @argv: Array of arguments passed to the program
+ * Return: Always 0
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	int mul(int a, int b);
+	int num1, num2, product;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	product = mul(num1, num2);
+	printf("%d\n", product);
 	return (0);
 }
-
