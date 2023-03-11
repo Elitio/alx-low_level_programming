@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * mul - This is the prototype function
@@ -9,9 +10,9 @@
  * Return: Will return 0 if successful
  */
 
-int mul(int n, int m)
+unsigned int mul(size_t n, size_t m)
 {
-	int mul_num;
+	unsigned int mul_num;
 
 	if (!n || !m)
 	{
@@ -19,7 +20,7 @@ int mul(int n, int m)
 		return (1);
 	}
 	mul_num = n * m;
-	printf("%d\n", mul_num);
+	printf("%u\n", mul_num);
 	return (0);
 }
 
@@ -32,8 +33,6 @@ int mul(int n, int m)
 
 int main(void)
 {
-	int mul(int n, int m);
 	mul(4, 5);
-	mul(5, 0);
 	return (0);
 }
