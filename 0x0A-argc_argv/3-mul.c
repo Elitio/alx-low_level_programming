@@ -3,36 +3,31 @@
 #include <stddef.h>
 
 /**
- * mul - This is the prototype function
- *
- * @n: This is the first parameter
- * @m: This is the second parameter
- * Return: Will return 0 if successful
+ * mul - Multiplies two integers
+ * @a: The first integer to multiply
+ * @b: The second integer to multiply
+ * Return: The product of the multiplication
  */
-
-unsigned int mul(size_t n, size_t m)
+int mul(int a, int b)
 {
-	unsigned int mul_num;
+	int multiply;
 
-	if (!n || !m)
+	if (a && b)
 	{
-		printf("Error\n");
-		return (1);
+		multiply = a * b;
+		printf("%d\n", multiply);
 	}
-	mul_num = n * m;
-	printf("%u\n", mul_num);
-	return (0);
+	printf("Error\n");
+	return (1);
 }
 
 /**
- * main - This is the main function where everything starts
- *
- * Return: Always 0;
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-
-
 int main(void)
 {
-	mul(4, 5);
+	int mul(int a, int b);
 	return (0);
 }
+
