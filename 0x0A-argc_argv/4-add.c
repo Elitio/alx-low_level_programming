@@ -17,13 +17,13 @@ int check_num(char *str)
 	count = 0;
 	while (count < strlen(str))
 	{
-		if (isdigit(str[count]))
+		if (!isdigit(str[count]))
 		{
-			return (0);
+			return (1);
 		}
 		count++;
 	}
-	return (1);
+	return (0);
 }
 
 /**
@@ -37,6 +37,11 @@ int main(int argc, char *argv[])
 {
 	int count = 1, str_to_int, sum = 0;
 
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 	while (count < argc)
 	{
 		if (check_num(argv[count]))
