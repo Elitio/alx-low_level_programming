@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+int check_num(char *str);
 /**
  * check_num - Checksstrings to see if there are digits
  *
