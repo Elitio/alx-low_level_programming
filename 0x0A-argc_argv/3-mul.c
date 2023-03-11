@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,16 +20,15 @@ int mul(int a, int b)
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, product;
+	int num1, num2;
 
-	if (argc != 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
-	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	product = mul(num1, num2);
-	printf("%d\n", product);
+	printf("%d\n", num1 * num2);
 	return (0);
+	}
+	printf("Error\n");
+	return (1);
 }
