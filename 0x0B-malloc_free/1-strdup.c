@@ -22,12 +22,12 @@ char *_strdup(char *str)
 	dup_str = strdup(str);
 	if (dup_str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	new_str = malloc(strlen(str) + 1);
 	if (new_str == NULL)
 	{
-		free (dup_str);
+		free(dup_str);
 		return (NULL);
 	}
 	strcpy(new_str, dup_str);
