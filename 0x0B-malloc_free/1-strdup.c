@@ -13,24 +13,31 @@
 
 char *_strdup(char *str)
 {
-	char *dup_str, *new_str;
+	int length = 0;
+	int i;
+	char *dup_str;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	dup_str = strdup(str);
+	/* calculate the length of the string */
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	/* allocate memory for the duplicate string */
+
+	dup_str = malloc((length + 1) * sizeof(char));
 	if (dup_str == NULL)
 	{
 		return (NULL);
 	}
-	new_str = malloc(strlen(str) + 1 * sizeof(char));
-	if (new_str == NULL)
+	/* Copy the string to the newly allocated memory */
+
+	for (i = 0; i <= length; i++)
 	{
-		free(dup_str);
-		return (NULL);
+		dup_str[i] = str[i];
 	}
-	strcpy(new_str, dup_str);
-	free(dup_str);
-	return (new_str);
+	return (dup_str);
 }
