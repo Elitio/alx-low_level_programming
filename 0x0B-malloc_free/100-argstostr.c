@@ -24,8 +24,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		total_length += strlen(av[i]) + 1; /* +1 for the newline character */
-		total_length += 1;
+		total_length += strlen(av[i]) + 1 + 1; /* +1 for the newline character */
 	}
 
 	result = malloc(total_length * sizeof(char));
