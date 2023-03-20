@@ -1,5 +1,5 @@
-#ifndef 0-PI_H
-#define 0-PI_H
+#ifndef PI_
+#define PI_
 
 #define PI 3.14159265359
 
