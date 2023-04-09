@@ -23,7 +23,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	}
 
 	mask = 1UL << index;
-	if ((*n & mask) == 1)
+	if ((*n & mask) != 0)
 	{
 		*n &= ~mask;
 		return (1);
