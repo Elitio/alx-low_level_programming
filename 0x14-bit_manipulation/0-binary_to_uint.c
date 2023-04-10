@@ -19,6 +19,11 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
+		if ((conv_num >> (sizeof(unsigned int) * 8 - 1)) && *b == '1')
+		{
+			return (0);
+		}
+
 		conv_num <<= 1;
 		if (*b == '1')
 		{
