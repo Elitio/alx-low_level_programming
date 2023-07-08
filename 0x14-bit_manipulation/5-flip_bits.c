@@ -8,7 +8,7 @@
  * @n: First number.
  * @m: Second number.
  *
- * Return : Number of bits
+ * Return: Number of bits
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
