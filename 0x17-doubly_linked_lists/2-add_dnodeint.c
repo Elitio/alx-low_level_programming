@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 /**
- * add)dnodeint - This will add a new node at the
+ * add_dnodeint - This will add a new node at the
  * beginning of the dlinked lists
  *
  * @head: dlined list pointer to the beginning of the dlink
